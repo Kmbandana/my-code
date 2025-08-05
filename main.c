@@ -317,38 +317,6 @@ int main(void)
 		 	          break;
 		 	}
 
-//	   if (rx_buffer[2] == 0x01)      ///led on
-//		   {
-//		      Led2_control_ON_OFF(1);
-//		      LCD_Clear();
-//		      LCD_Set_Cursor(1, 0);
-//		      LCD_Send_String("LED ON");
-//
-//		      frame_tick = now;
-//
-//	       }
-//	  else if (rx_buffer[2] == 0x02)  ///led off
-//	       {
-//		      Led2_control_ON_OFF(0);
-//		      LCD_Clear();
-//		      LCD_Set_Cursor(1, 0);
-//		      LCD_Send_String("LED OFF");
-//
-//		      frame_tick = now;
-//	       }
-//	  else if (rx_buffer[2] >= 0x00 && rx_buffer[2] <= 0xFF)
-//	       {
-//		      uint32_t brightness = (rx_buffer[2] * 4095) / 255;
-//		      uint32_t brightness_percentage = (rx_buffer[2] * 100) / 255;
-//		      Led1_brightness_control(brightness);
-//		      snprintf(buffer, sizeof(buffer), "Brightness:%lu%%", brightness_percentage);
-//		      LCD_Clear();
-//		      LCD_Set_Cursor(1, 0);
-//		      LCD_Send_String(buffer);
-//			  flagframecompleted = 0;
-//		      frame_tick = now;
-//	       }
-		 	//flagframecompleted = 0;
 		 	frame_tick = now;
 	    }
 	 flagframecompleted = 0;
@@ -685,3 +653,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
