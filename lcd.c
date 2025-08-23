@@ -9,7 +9,7 @@ void LCD_Enable(void) {
     HAL_GPIO_WritePin(LCD_EN_Port, LCD_EN_Pin, GPIO_PIN_RESET);
     HAL_Delay(1);
 }
-
+//printf()
 void LCD_Send_Nibble(uint8_t nibble) {
     HAL_GPIO_WritePin(LCD_D4_Port, LCD_D4_Pin, (nibble >> 0) & 0x01);
     HAL_GPIO_WritePin(LCD_D5_Port, LCD_D5_Pin, (nibble >> 1) & 0x01);
